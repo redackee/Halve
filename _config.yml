@@ -1,7 +1,7 @@
 # Site
 title: Red Ackee
 description: Mobile App Consultant - Red Ackee Software constructs creative and engaging  mobile Apps for Android & iOS. Bespoke software for all makes of Android, iPhone & iPad.
-url: http://127.0.0.1:4000/
+url: http://redackeesoftware.com
 logo: lego-ackee-logo.jpg                                       # Site logo
 locale: en_US
 
@@ -12,7 +12,7 @@ background:
   default-post: images/background_factory.jpg   # this image will be shown when post's front matter doesn't specify any image
 
 # Jekyll
-permalink:          /:title/
+permalink:          /:categories/:year/:month/:day/:title/index.html
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Google Analytics
-#google-analytics: UA-XXXXX-Y
+google-analytics: UA-84216102-1
 
 # Social Links
 email:             ndilworth.work@gmail.com
