@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Here, We Begin"
 excerpt_separator: "<!--more-->"
 categories:
