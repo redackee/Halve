@@ -1,7 +1,8 @@
 # Site
-title: Red Ackee
-description: Mobile App Consultant - Red Ackee Software constructs creative and engaging  mobile Apps for Android & iOS. Bespoke software for all makes of Android, iPhone & iPad.
-url: http://redackeesoftware.com
+title: Red Ackee Software
+description: Mobile App Development -
+  Bespoke software for all makes of Android and iOS (iPhone and iPad).
+url: http://localhost:4000
 logo: lego-ackee-logo.jpg                                       # Site logo
 locale: en_US
 
