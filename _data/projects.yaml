@@ -1,4 +1,4 @@
 - title: "Wild Calls App"
-  url: http://localhost:4000/images/projects/wild_calls/showcase_video_post.html
-  image: http://localhost:4000/images/projects/wild_calls/Showcase_APP_Splash.png
+  url: /projects/ios/wild_calls/showcase_video_post.html
+  image: /projects/ios/wild_calls/Showcase_APP_Splash.png
   completed: true

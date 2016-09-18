@@ -1,12 +1,19 @@
 <div class="overlay">
+
   <ul class="projects-menu">
     {% for item in site.data.projects %}
-      {% capture image %}{{ item.image }}{% endcapture %}
-      {% unless image contains 'http://' or image contains 'https://' %}
-      {% capture image %}{{ site.url }}/{{ image }}{% endcapture %}
+      {% capture project_image %}{{ item.image }}{% endcapture %}
+      {% unless project_image contains 'http://' or project_image contains 'https://' %}
+      {% capture project_image %}{{ site.url }}{{ project_image }}{% endcapture %}
       {% endunless %}
-      <li style="background:url({{ image }}) center center no-repeat;">
-        <a href="{{ item.url }}" {% unless item.completed %}class="inactive"{% endunless %} target="_blank" rel="nofollow external">
+
+      {% capture project_url %}{{ item.url }}{% endcapture %}
+      {% unless project_url contains 'http://' or project_url contains 'https://' %}
+      {% capture project_url %}{{ site.url }}{{ project_url }}{% endcapture %}
+      {% endunless %}
+
+      <li style="background:url({{ project_image }}) center center no-repeat;">
+        <a href="{{ project_url }}" {% unless item.completed %}class="inactive"{% endunless %} target="_blank" rel="nofollow external">
           <span>
             {{ item.title }}
             {% unless item.completed %}
@@ -17,4 +24,18 @@
         </li>
     {% endfor %}
   </ul>
+
+  <style>
+   body#homepage .overlay .logo {
+    display: none;
+   }
+
+   div .overlay .logo {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+   }
+  </style>
+  <a href="{{ site.url }}/index.html" class="logo"><img src="{{ site.url }}/images/{{ site.logo }}"></a>
+
 </div>
